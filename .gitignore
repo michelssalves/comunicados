@@ -1,0 +1,5 @@
+# Ignorar todas as pastas
+*/
+# Permitir a pasta1
+!/includes/
+!/webfonts/
