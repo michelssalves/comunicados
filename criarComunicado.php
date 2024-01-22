@@ -27,15 +27,15 @@ include 'includes/menu-cliente.php';
 						</div>
 					</div>
 					<div class="input-group mb-3">
-						<input type="text" name="titulo" value="BLABLA" class="form-control" placeholder="Título do Comunicado">
+						<input type="text" name="titulo" class="form-control" placeholder="Título do Comunicado">
 					</div>
 					<div class="input-group mb-3">
-						<input type="text" name="fonte" value="BLA1BLA1" class="form-control" placeholder="Link da Imagem">
+						<input type="text" name="fonte" class="form-control" placeholder="Link da Imagem">
 					</div>
 					<div class="input-group mb-3">
-						<input type="text" name="redirecionamento" value="BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2BLA2" class="form-control" placeholder="Redirecionamento">
+						<input type="text" name="redirecionamento" class="form-control" placeholder="Redirecionamento">
 					</div>
-					<textarea hidden name="noticia" value="BLA1BLA1BLA1BLA1" id="textarea"></textarea>
+					<textarea hidden name="noticia" id="textarea"></textarea>
 					<div style="height: 250px;" id="editor"></div>
 					<div class="input-group mb-3">
 						<input type="file" class="form-control-file" name="arquivo">

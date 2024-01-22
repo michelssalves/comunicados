@@ -18,11 +18,9 @@ include 'includes/menu-cliente.php';
 <form method="POST">
     <div class="card-filtro">
         <div class="card-content-filtro">
-            <button class="btn btn-primary btn-sm" type="button" data-toggle="modal"
-                data-target="#modalCriarGrupo">Produto</button>
-            <button class="btn btn-secondary btn-sm" type="button"
+            <button class="btn btn-success btn-sm" type="button"
                 onclick="location.href='criarGrupos.php';">Grupos</button>
-            <button type="button" class="btn btn-light btn-sm"
+            <button type="button" class="btn btn-info btn-sm"
                 onclick="location.href='criarComunicado.php';">Criar</button>
         </div>
     </div>

@@ -1,81 +1,111 @@
 @import url('w3.css');
 @import url('bootstrap.css');
 @import url('fontawesome.all.min.6.2.1.css');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
- 
-}
-.form-inline{
-    height: 25px;
-    
-}
-.navbar{
-    background-color: #3F51B5;
-}
-body{
 
-    background-color: #EDEEF0;
-    font-family: Helvetica;
-    font-size: 15px;
-    background-color: #edeef0;
-    margin: 0;
-    padding-bottom: 50px;
-    line-height: 1.5;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
 }
-a{
-    text-decoration: none;
-    color: inherit;
+
+.form-inline {
+  height: 25px;
+
 }
+
+.navbar {
+  background-color: #3F51B5;
+}
+
+body {
+
+  background-color: #EDEEF0;
+  font-family: Helvetica;
+  font-size: 15px;
+  background-color: #edeef0;
+  margin: 0;
+  padding-bottom: 50px;
+  line-height: 1.5;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card-filtro {
-    width: 66%;
-    padding: 6px;
-    border: 2px solid #0000004f;
-    margin: 0.5em auto 0.2em;
-    border-radius: 8px;
-    background-color:#FFFFFF;
+  width: 66%;
+  padding: 6px;
+  border: 2px solid #0000004f;
+  margin: 0.5em auto 0.2em;
+  border-radius: 8px;
+  background-color: #FFFFFF;
 }
+
 .card-content-filtro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.input-texto input{
-    width: 300px;
+
+.input-texto input {
+  width: 300px;
 }
+
 .card-content-filtro select,
 .card-content-filtro button,
 .card-content-filtro input {
-    margin-right: 5px;
+  margin-right: 5px;
 }
+
 .card-table {
-    width: 100%;
-    /* margin: 0 auto; */
-    padding: 15px;
-    border: 2px solid #0000004f;
-    border-radius: 8px;
-    background-color:#FFFFFF;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 15px;
+  border: 2px solid #0000004f;
+  border-radius: 8px;
+  background-color: #FFFFFF;
 }
-tr{
-    cursor: pointer;
+
+tr {
+  cursor: pointer;
 }
+
 table.table-hover tbody tr:hover {
-    background-color: #d1b67b;
+  background-color: #d1b67b;
 }
-.iconetrash{
-    width: 15px;
-    height: 15px;
- 
-}
-.teste{
 
-    width: 350px;padding-left: 30px;
-
+.iconetrash {
+  width: 15px;
+  height: 15px;
 
 }
+
+.teste {
+
+  width: 350px;
+  padding-left: 30px;
+
+}
+
 li {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
+
+.dataTables_info,
+#example_paginate,
+#example_length {
+  display: none
+}
+
+.dataTables_filter input {
+  margin-left: 15px;
+}
+
+.dataTables_filter label {
+
+  font-weight: bold;
+
+}
