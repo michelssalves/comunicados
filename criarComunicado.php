@@ -15,7 +15,7 @@ include 'includes/menu-cliente.php';
 				<form enctype="multipart/form-data" method="POST" id="form">
 					<div class="input-group mb-3">
 						<div class="dropdown">
-							<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+							<a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Grupo
 							</a>
@@ -25,6 +25,7 @@ include 'includes/menu-cliente.php';
 								</ul>
 							</div>
 						</div>
+						
 					</div>
 					<div class="input-group mb-3">
 						<input type="text" name="titulo" class="form-control" placeholder="Título do Comunicado">
@@ -42,6 +43,7 @@ include 'includes/menu-cliente.php';
 					</div>
 					<div class="input-group mb-3">
 						<button id="botaoForm" name="action" value="criarComunicado" class="btn btn-success">Salvar</button>
+						<button class="btn btn-info ml-2" type="button" onclick="location.href='index.php';">Voltar</button>
 					</div>
 				</form>
 			</div>
@@ -51,5 +53,15 @@ include 'includes/menu-cliente.php';
 	</div>
 	</div>
 	<script src="/scripts/js/quillformatar.js"></script>
+	<script>
+    $(document).ready(function () {
+        $('#form').submit(function (e) {
+            if ($('input[name="grupos[]"]:checked').length === 0) {
+                alert('Selecione um grupo!')
+                e.preventDefault()
+            }
+        })
+    })
+</script>
 </body>
 </html>

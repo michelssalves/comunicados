@@ -49,7 +49,7 @@ if ($usuario['nomeCompleto'] && $tela == 'visualizarComunicado') {
         echo "<script>console.log('Já visualizou essa noticia')</script>";
      }
 }
-if ($usuario['nomeCompleto'] && $tela == 'criarComunicado') {
+if ($usuario['nomeCompleto'] && $tela == 'criarComunicado' && $action == 'criarComunicado') {
 
     $idGrupos = $_REQUEST["grupos"];
     
