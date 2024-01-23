@@ -3,3 +3,6 @@
 # Permitir a pasta1
 !/includes/
 !/webfonts/
+!/Model
+!/Controller
+!/Includes/Handlers
