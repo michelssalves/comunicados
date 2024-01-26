@@ -15,6 +15,7 @@ include 'includes/menu-cliente.php';
 
     }
 </script>
+<?php if (in_array($usuario['id'], $objeto->selectUserAcesso())) { ?>
 <form method="POST">
     <div class="card-filtro">
         <div class="card-content-filtro">
@@ -25,6 +26,7 @@ include 'includes/menu-cliente.php';
         </div>
     </div>
 </form>
+<?php } ?>
 <div class="row">
     <div class="col">
     </div>
@@ -35,8 +37,8 @@ include 'includes/menu-cliente.php';
                     <thead>
                         <tr>
                             <th>ASSUNTO DO COMUNICADO</th>
-                            <th id="data-noticia">DATA</th>
-                            <th></th>
+                            <th colspan="2" id="data-noticia">DATA</th>
+                           
                         </tr>
                     </thead>
                     <tbody>

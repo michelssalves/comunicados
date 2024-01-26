@@ -26,7 +26,7 @@ if ($usuario['nomeCompleto'] && $tela == 'listarComunicados') {
             $listarNoticias .= '<tr '.$cor[$row['lido']].' >
                 <td '.$link.'>'.$row['titulo'].'</a></td>
                 <td>'.$objeto->dma($row['data_noticia']).'</td>';  
-        if($usuario['id']  == '161' || $usuario['id']  == '238'|| $usuario['id']  == '392' || $usuario['id']  == '211' || $usuario['id']  == '92'){
+        if (in_array($usuario['id'], $objeto->selectUserAcesso())) {
             $listarNoticias .= '
                 <td><center><a href="?noticia='.$row['id_noticia'].'&action=excluirNoticia"><img class="iconetrash" src="./includes/img/icones/trash.png"></a></td>
                 </tr>';
